@@ -4,12 +4,15 @@ var table = document.getElementById ("table")
 var index ;
 
 var siteList = []
-if (siteList.length == 0 && localStorage.getItem == null) {
+if (siteList.length == 0 && localStorage.getItem("siteList") == null) {
     var siteList = []
 }else {
     siteList = JSON.parse(localStorage.getItem("siteList"))
     displaySite()
 }
+// if (condition) {
+    
+// }
 
 
 function addSite() {
